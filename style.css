@@ -1,0 +1,170 @@
+html,
+html::before,
+html::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.navbar-nav li, a {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Roboto Mono';
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 4.8rem;
+}
+
+.intro {
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+#name {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-family: 'Roboto Mono'
+}
+
+#resume a {
+  text-decoration: none;
+  font-family: Raleway;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.about-me {
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.content img {
+  width: 60%;
+  height: auto;
+}
+
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-family: 'Montserrat';
+  padding-top: 5rem;
+  text-align: justify;
+}
+
+.titles {
+  font-family: Poppins;
+  font-weight: 800;
+  letter-spacing: .1ch;
+}
+
+.experiences {
+  padding: 5rem 2rem;
+}
+
+.cards {
+  position: relative;
+}
+
+.card {
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  min-height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly !important;
+  align-items: center;
+}
+
+.card img {
+  width: 30% !important;
+  height: auto;
+  margin: 1.5rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+.year {
+  margin-top: auto !important;
+}
+
+.owl-nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 37%;
+}
+
+.owl-nav:hover {
+  background-color: transparent !important;
+}
+
+.owl-nav span {
+  font-size: 3rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-nav li, a {
+    text-align: right;
+    margin: 0.5rem;
+  }
+  
+  .navbar-nav {
+    margin: 0;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .intro {
+    padding: 5rem;
+  }
+
+  .content img {
+    width: 40%;
+    margin-right: 2rem;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .desc {
+    width: 50%;
+    padding-top: 0;
+    padding-left: 3rem;
+  }
+
+  .card {
+    box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
+    -webkit-box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
+    -moz-box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
+  }
+}
