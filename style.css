@@ -4,6 +4,7 @@ html::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,7 +87,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly !important;
-  align-items: center;
+  align-items: center !important;
 }
 
 .card img {
@@ -98,8 +99,11 @@ main {
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between !important;
   align-items: center;
+}
+
+.project-images {
+  width: fit-content !important;
 }
 
 .year {
@@ -122,8 +126,70 @@ main {
   font-size: 3rem;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: unset !important;
+}
+
+.project-description {
+  display: flex;
+  flex: 1;
+}
+
+.project .titles {
+  padding-top: 2.5rem;
+  font-size: 1.4rem !important;
+}
+
+.project-images {
+  width: 110%;
+  height: auto;
+}
+
+.project-description p {
+  font-family: 'Montserrat';
+  text-align: left;
+  padding: 1.5rem;
+}
+
+.card .project-images img{
+  width: 80% !important;
+  height: auto;
+  padding: 2rem 0 1rem 0;
+}
 
 @media screen and (min-width: 1000px) {
+  #name {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(35, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
   .navbar-toggler {
     display: none;
   }
@@ -166,5 +232,23 @@ main {
     box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
     -webkit-box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
     -moz-box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
+  }
+
+  .projects, .experiences {
+    padding-top: 6rem;
+  }
+
+  .project {
+    padding: 4rem;
+    margin: 3rem auto;
+  }
+
+  .projects .card {
+    width: 85%;
+    height: auto;
+  }
+
+  .project-description p {
+    font-size: 1.2rem;
   }
 }

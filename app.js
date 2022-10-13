@@ -1,4 +1,20 @@
 $(document).ready(function(){
+
+  
+  navbar = document.querySelector('#navbarNav');
+
+  // get window size
+  windowSize = window.screen.availWidth;
+
+  if (windowSize >= 1000) {
+      navbar.classList.add('show');
+      $('.projects .content').removeClass('owl-carousel owl-theme')
+      $('.projects .content').addClass('container')
+  } else {
+      navbar.classList.remove('show');
+      $('.projects .content').addClass('owl-carousel owl-theme')
+      $('.project').removeAttr('data-aos')
+  }
   $(".owl-carousel").owlCarousel({
     loop: true,
     responsive: {
@@ -18,15 +34,4 @@ $(document).ready(function(){
     },
     autoHeight: true,
   });
-
-  navbar = document.querySelector('#navbarNav');
-
-  // get window size
-  windowSize = window.screen.availWidth;
-
-  if (windowSize >= 1000) {
-      navbar.classList.add('show');
-  } else {
-      navbar.classList.remove('show');
-  }
 });
