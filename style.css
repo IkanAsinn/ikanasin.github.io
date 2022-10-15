@@ -7,6 +7,25 @@ html::after {
   scroll-behavior: smooth;
 }
 
+header.is-fixed {
+  z-index: 103;
+  background: #fff;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 body {
   background-color: #fafafa;
 }
@@ -64,6 +83,7 @@ main {
   font-family: 'Montserrat';
   padding-top: 5rem;
   text-align: justify;
+  font-size: 1rem;
 }
 
 .titles {
@@ -140,7 +160,8 @@ main {
 
 .project .titles {
   padding-top: 2.5rem;
-  font-size: 1.4rem !important;
+  padding-inline: 1rem;
+  font-size: 1.4rem;
 }
 
 .project-images {
@@ -160,7 +181,29 @@ main {
   padding: 2rem 0 1rem 0;
 }
 
+.projects .card {
+  width: 85%;
+  height: auto;
+  margin-inline: auto;
+}
+
 @media screen and (min-width: 1000px) {
+  main {
+    margin-top: 90px;
+  }
+
+  .intro {
+    height: calc(100vh - 90px);
+  }
+
+  .intro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
   #name {
     width: fit-content;
     margin: 0 auto;
@@ -226,6 +269,7 @@ main {
     width: 50%;
     padding-top: 0;
     padding-left: 3rem;
+    font-size: 1.25rem;
   }
 
   .card {
@@ -234,21 +278,20 @@ main {
     -moz-box-shadow: 0px 5px 25px -14px rgba(0,0,0,0.60);
   }
 
-  .projects, .experiences {
-    padding-top: 6rem;
+  .about-me, .projects, .experiences {
+    padding-top: 10rem;
+  }
+
+  .project-description p {
+    font-size: 1.2rem;
+  }
+
+  .projects .titles {
+    font-size: 2rem;
   }
 
   .project {
     padding: 4rem;
     margin: 3rem auto;
-  }
-
-  .projects .card {
-    width: 85%;
-    height: auto;
-  }
-
-  .project-description p {
-    font-size: 1.2rem;
   }
 }

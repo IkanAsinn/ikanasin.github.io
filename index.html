@@ -28,7 +28,7 @@
 
 <body>
 
-  <header>
+  <header class="header-sticky fixed-top">
     <div id="navbarNav" class="collapse">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -42,9 +42,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -74,14 +74,14 @@
         <h1 class="fs-1 titles">About Me</h1>
         <div class="content pt-5 d-flex">
           <img src="profile_pics.png" alt="">
-          <div class="desc fs-5">
-            A hardworking college student who is knowledgeable in user interface, testing, and debugging processes.
-            Committed to utilizing my skills to further the mission of a company. Strong organizational abilities with
-            proven success in managing multiple academic projects and volunteering events. Acquiring new knowledge of
-            being a Software Developer adept at bringing forth expertise in design, installation, testing and
-            maintenance
-            of software systems. Proficient in various platforms, languages, and embedded systems. Able to effectively
-            self-manage during independent projects, as well as collaborate as part of a productive team.
+          <div class="desc">
+            <p>A hardworking college student who is knowledgeable in user interface, testing, and debugging processes.
+              Committed to utilizing my skills to further the mission of a company. Strong organizational abilities with
+              proven success in managing multiple academic projects and volunteering events. Acquiring new knowledge of
+              being a Software Developer adept at bringing forth expertise in design, installation, testing and
+              maintenance
+              of software systems. Proficient in various platforms, languages, and embedded systems. Able to effectively
+              self-manage during independent projects, as well as collaborate as part of a productive team.</p>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@
       </div>
     </div>
     <div class="projects" id="projects">
-      <h1 class="fs-1 titles">Projects</h1>
+      <h1 class="titles">Projects</h1>
       <div class="content mt-5">
         <div data-aos="fade-up" class="project card">
           <div class="project-top">
@@ -169,6 +169,22 @@
             </div>
           </div>
         </div>
+        <div class="project card" data-aos="fade-left">
+          <h1 class="titles">Motodo - To Do List with AI</h1>
+          <div class="project-images">
+            <img src="motodo.png" alt="auxtify">
+          </div>
+          <div class="details">
+            <div class="project-description">
+              <p>Motodo is a to do list web-based application. The concept of this
+                application is to implement artificial intelligence into a to do list app.
+                Although not my best project, it requires me and my team to work all
+                day. We had a problem that most of us did not understand about
+                web development. Me as a front-end developer need to study
+                together with my team, so we could develop Motodo faster.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -180,7 +196,7 @@
   <script>
     AOS.init({
       duration: 1000,
-      offset: 700,
+      offset: 600,
     });
   </script>
 </body>
