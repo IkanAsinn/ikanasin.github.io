@@ -48,6 +48,11 @@ main {
 .intro {
   padding: 5rem 3rem;
   text-align: center;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #name {
