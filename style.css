@@ -208,6 +208,125 @@ main {
   margin-top: 3rem;
 }
 
+.contact .content{
+  text-align: left;
+}
+
+.contact .form-control {
+  border-radius: 10px;
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  font-size: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+.contact .card {
+  margin-inline: auto;
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+}
+
+.contact .form-control::placeholder {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: .7rem !important;
+}
+
+.contact form label {
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  font-size: 1rem !important;
+  margin-bottom: .5rem;
+}
+
+.contact button {
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  font-size: 1rem !important;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin: 0;
+}
+
+.contact textarea {
+  height: 10rem;
+}
+
+.social-media {
+  padding: 3rem 1.5rem;
+}
+
+.social-media h3 {
+  color: #fafafa;
+  font-family: Roboto;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.social-lists{
+  display: grid;
+  width: min-content;
+  grid-template-areas:  "icon1 list1"
+  "icon2 list2"
+  "icon3 list3"
+  "icon4 list4";
+  grid-template-rows: repeat(4, 50px);
+  grid-template-columns: 40px 1fr;
+  grid-gap: 20px;
+  place-items: center start;
+  margin-inline: auto;
+  
+}
+
+.social-media i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #fafafa;
+} 
+
+#linkedin-icon {
+  grid-area: icon1;
+}
+
+#email-icon {
+  grid-area: icon2;
+}
+
+#instagram-icon {
+  grid-area: icon3;
+}
+
+#github-icon {
+  grid-area: icon4;
+}
+
+#linkedin-list {
+  grid-area: list1;
+}
+
+#email-list {
+  grid-area: list2;
+}
+
+#instagram-list {
+  grid-area: list3;
+}
+
+#github-list {
+  grid-area: list4;
+}
+
+.social-media p, .social-media a {
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  font-size: 1rem !important;
+  margin: 0;
+  color: #fafafa;
+}
+
 @media screen and (min-width: 1000px) {
   main {
     margin-top: 90px;
@@ -331,5 +450,37 @@ main {
   .skill img {
     width: auto !important;
     height: 100px;
+  }
+
+  .contact form{
+    width: 100%;
+  }
+
+  .social-media {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .social-media h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-lists {
+    margin-inline: auto;
+  }
+
+  .social-media i {
+    margin-right: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .social-media p, .social-media a {
+    font-size: 1.3rem !important;
+  }
+
+
+  .skills, .contact {
+    padding-top: 9rem
   }
 }
