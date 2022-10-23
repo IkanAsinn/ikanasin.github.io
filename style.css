@@ -55,7 +55,7 @@ main {
   align-items: center;
 }
 
-#name {
+#nama {
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
@@ -227,10 +227,9 @@ main {
   padding: 2rem;
 }
 
-.contact .form-control::placeholder {
-  font-family: 'Raleway';
+.contact .form-control::placeholder, .contact .form-control {
   font-weight: 600;
-  font-size: .7rem !important;
+  font-size: .8rem !important;
 }
 
 .contact form label {
@@ -344,7 +343,7 @@ main {
     height: 100%;
   }
 
-  #name {
+  #nama {
     width: fit-content;
     margin: 0 auto;
   }

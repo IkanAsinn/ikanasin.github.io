@@ -22,6 +22,8 @@ $(document).ready(function(){
       // $('.projects .content').addClass('owl-carousel owl-theme')
       $('.project').removeAttr('data-aos')
       $('header').removeClass('header-sticky fixed-top')
+      $('.technical').removeAttr('data-aos')
+      $('.non-technical').removeAttr('data-aos')
   }
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -81,4 +83,13 @@ function onScroll(event){
           currLink.removeClass("active");
       }
   });
+}
+
+function submitForm(e) {
+  e.preventDefault();
+
+  alert("Your message will be sent, Thank you!");
+
+  // refresh page
+  location.reload();
 }
