@@ -2,6 +2,10 @@ $(document).ready(function(){
   
   navbar = document.querySelector('#navbarNav');
 
+  AOS.init({
+    duration: 1000,
+  });
+
   // get window size
   windowSize = window.screen.availWidth;
 
